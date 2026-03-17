@@ -200,7 +200,7 @@ export default function Home() {
             >
               Hi, I'm {'Emaediong Chrysanthus'}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                 Chrysanthus
+                 Emaediong Chrysanthus
               </span>
             </motion.h1>
             

@@ -21,6 +21,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Custom components */
@@ -68,5 +78,239 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+/* Responsive layout adjustments for the portfolio sections */
+@media (max-width: 1024px) {
+  section {
+    scroll-margin-top: 5rem;
+  }
+
+  #home .max-w-7xl,
+  #about .max-w-7xl,
+  #skills .max-w-7xl,
+  #projects .max-w-7xl,
+  #contact .max-w-7xl,
+  footer .max-w-7xl,
+  nav .max-w-7xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #projects .grid.md\:grid-cols-2,
+  #about .grid.md\:grid-cols-2 {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  section {
+    scroll-margin-top: 4.5rem;
+  }
+
+  #home {
+    min-height: auto;
+  }
+
+  #home .py-20,
+  #about,
+  #skills,
+  #projects,
+  #contact {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #home .text-center {
+    padding-top: 1rem;
+  }
+
+  #home h1 {
+    font-size: clamp(2.5rem, 8vw, 3.75rem);
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+
+  #home h1 span {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  #home h2 {
+    font-size: 1.125rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  #home .max-w-2xl {
+    max-width: 36rem;
+  }
+
+  #home .flex.flex-col.sm\:flex-row {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  #home .flex.flex-col.sm\:flex-row a {
+    width: 100%;
+  }
+
+  #home .absolute.bottom-10 {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
+  }
+
+  nav .md\:hidden.mt-4 {
+    margin-top: 0.75rem;
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  }
+
+  #about .grid.md\:grid-cols-2,
+  #contact .grid.md\:grid-cols-2,
+  footer .flex-col.md\:flex-row {
+    gap: 1.5rem;
+  }
+
+  #about .space-y-4 p,
+  #projects p,
+  #contact label,
+  footer p {
+    line-height: 1.65;
+  }
+
+  #about .mt-8.space-y-3 > div {
+    align-items: flex-start;
+  }
+
+  #about .mt-8.space-y-3 span {
+    overflow-wrap: anywhere;
+  }
+
+  #skills .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4,
+  #projects .grid.md\:grid-cols-2 {
+    gap: 1rem;
+  }
+
+  #projects .p-6,
+  #contact form,
+  #skills .p-6 {
+    padding: 1.25rem;
+  }
+
+  #projects .flex.justify-between.items-center {
+    gap: 0.75rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #projects h3,
+  #projects p,
+  #projects span,
+  #projects a {
+    overflow-wrap: anywhere;
+  }
+
+  #projects a {
+    min-height: 2.75rem;
+  }
+
+  #contact textarea {
+    min-height: 9rem;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .flex.space-x-6 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #home .max-w-7xl,
+  #about .max-w-7xl,
+  #skills .max-w-7xl,
+  #projects .max-w-7xl,
+  #contact .max-w-7xl,
+  footer .max-w-7xl,
+  nav .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #home .w-32.h-32 {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  #home h1,
+  #home .text-4xl {
+    font-size: 1.875rem;
+  }
+
+  #home h2 {
+    font-size: 1rem;
+  }
+
+  #home .mb-12 {
+    margin-bottom: 2rem;
+  }
+
+  #about h2,
+  #skills h2,
+  #projects h2,
+  #contact h2 {
+    font-size: 1.875rem;
+  }
+
+  #skills .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  #projects .h-48 {
+    height: 10rem;
+  }
+
+  #projects .p-6,
+  #skills .p-6 {
+    padding: 1rem;
+  }
+
+  #projects .text-xl {
+    font-size: 1.125rem;
+  }
+
+  #contact form {
+    padding: 1rem;
+  }
+
+  #contact input,
+  #contact textarea,
+  #contact button {
+    font-size: 0.95rem;
+  }
+
+  #about .bg-gradient-to-br.from-primary\/10.to-secondary\/10 {
+    padding: 1.25rem;
+  }
+
+  footer .flex.space-x-6 {
+    gap: 1.25rem;
   }
 }

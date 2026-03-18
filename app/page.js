@@ -68,7 +68,7 @@ export default function Home() {
       description: 'A payment gateway that integrates whop payment can can be customised to accept certain currencies but currently accepts payment in dollars',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       github: 'https://github.com/I-code-like-a-pro/whop_payment',
-      live: 'https:// whop-payment-five.vercel.app',
+      live: 'https://whop-payment-five.vercel.app',
       
     },
     {

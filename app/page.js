@@ -99,7 +99,7 @@ export default function Home() {
   description: 'A comprehensive event management platform that enables users to create, view, and delete events, manage attendee lists, and share events with others. Features include user authentication, password recovery, and intuitive event organization.',
   tags: ['Python', 'HTML', 'CSS', "Flask", "SQ lite"],
   github: 'https://github.com/I-code-like-a-pro/temp_repo_storage',
-  live: 'https://temp-repo-storage-x7g8.vercel.app/',
+  live: 'https://temp-repo-storage-7avj.vercel.app/',
   
 }
   ]

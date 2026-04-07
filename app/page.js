@@ -101,7 +101,21 @@ export default function Home() {
   github: 'https://github.com/I-code-like-a-pro/temp_repo_storage',
   live: 'https://temp-repo-storage-7avj.vercel.app/',
   
-}
+},
+    {
+      title: "Barber & Cosmetology Licensing Education Industry",
+      desription:"The California barbering industry ",
+      tags:["HTML", "CSS", "JavaScript"],
+      github:"https://github.com/I-code-like-a-pro/Barber-course-",
+      live:"https://barber-course-navy.vercel.app"
+    },
+    {
+      title:"LUMIÈRE — Radically Radiant Skincare",
+      description:"LUMIÈRE is a premium skincare destination for those who refuse to compromise between nature and performance",
+      tags:["HTML","CSS","JavaScript"],
+      github:"https://github.com/I-code-like-a-pro/Skin-care-products",
+      live:"https://skin-care-products-two.vercel.app"
+    }
   ]
 
   return (

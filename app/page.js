@@ -72,13 +72,6 @@ export default function Home() {
       
     },
     {
-      title: 'Todo List',
-      description: 'Manage task to be done, and progress tracking.',
-      tags: ['Next.js', 'JSX', 'pocketbase.io'],
-      github: 'https://github.com/I-code-like-a-pro/todolist',
-      live: 'https://example.com',
-    },
-    {
       title: 'ArtistSphere',
       description: 'A modern music portfolio platform for artists to showcase their discography, share albums, and connect with fans.',
       tags: ["React", "Next.js","Tailwind CSS"],

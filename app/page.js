@@ -84,7 +84,7 @@ export default function Home() {
   description: 'An intelligent conversational AI assistant capable of natural language processing, interactive games, and providing helpful information to users.',
   tags: ['JavaScript', 'React', 'CSS'],
   github: 'https://github.com/I-code-like-a-pro/chatbot',
-  live: 'https://my-chatbot-24pr8ziab-divines-projects-3e6e153f.vercel.app/',
+  live: 'https://my-chatbot-wtg7.vercel.app/',
   
 },
 {

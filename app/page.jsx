@@ -242,7 +242,7 @@ export default function Home() {
                 View Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="/Emaediong_Chrysanthus_Resume (7).docx" download="Emaedion_Chrysanthus_Resume.docx"
                 className="border-2 border-gray-300 text-gray-600 px-8 py-3 rounded-lg font-medium hover:border-primary hover:text-primary transition-colors duration-300 flex items-center justify-center gap-2"
               >
                 <FiDownload /> Resume

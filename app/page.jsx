@@ -57,15 +57,15 @@ setIsAtBottom(scrollBottom >= docHeight - 100)
   ]
 
   const skills = [
-    { name: 'React', icon: SiReact, color: '#61DAFB', level: 100 },
-    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 100 },
+    { name: 'React', icon: SiReact, color: '#61DAFB', level: 90 },
+    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 90 },
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4', level: 100 },
-    { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 100 },
-    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 100 },
-    { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 100 },
+    { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 70 },
+    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 70},
+    { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level:70},
     { name: 'Express', icon: SiExpress, color: '#000000', level: 70},
-    { name: 'Git', icon: SiGit, color: '#F05032', level:80},
-    {name:"Python", icon:SiPython  ,color:'#339933',level:100},
+    { name: 'Git', icon: SiGit, color: '#F05032', level:70},
+    {name:"Python", icon:SiPython  ,color:'#339933',level:70},
     {name:"Flask", icon:SiFlask, color:"grey",level:100}
   ]
 

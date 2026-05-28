@@ -4,23 +4,29 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { 
   FiMenu, FiX, FiGithub, FiLinkedin, FiTwitter, FiMail,
-  FiArrowDown, FiMapPin, FiPhone, FiExternalLink, FiDownload
+  FiArrowDown, FiMapPin, FiPhone, FiExternalLink, FiDownload, FiArrowUp
 } from 'react-icons/fi'
 import { 
   SiReact, SiNextdotjs, SiTailwindcss, SiJavascript,
   SiTypescript, SiNodedotjs, SiExpress, 
    SiGit,
-  SiPython
+  SiPython, SiFlask
 } from 'react-icons/si'
+
+
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const [scrolled, setScrolled] = useState(false)
+  const [isAtBottom, setIsAtBottom] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
+      const scrollBottom = window.innerHeight + window.scrollY
+const docHeight = document.documentElement.scrollHeight
+setIsAtBottom(scrollBottom >= docHeight - 100)
       
       // Update active section based on scroll position
       const sections = ['home', 'about', 'skills', 'projects', 'contact']
@@ -51,26 +57,19 @@ export default function Home() {
   ]
 
   const skills = [
-    { name: 'React', icon: SiReact, color: '#61DAFB', level: 90 },
-    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 85 },
-    { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4', level: 95 },
-    { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 90 },
-    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 80 },
-    { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 85 },
-    { name: 'Express', icon: SiExpress, color: '#000000', level: 80 },
-    { name: 'Git', icon: SiGit, color: '#F05032', level: 85 },
-    {name:"Python", icon:SiPython  ,color:'#339933',level:85}
+    { name: 'React', icon: SiReact, color: '#61DAFB', level: 100 },
+    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 100 },
+    { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4', level: 100 },
+    { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 100 },
+    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 100 },
+    { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 100 },
+    { name: 'Express', icon: SiExpress, color: '#000000', level: 70},
+    { name: 'Git', icon: SiGit, color: '#F05032', level:80},
+    {name:"Python", icon:SiPython  ,color:'#339933',level:100},
+    {name:"Flask", icon:SiFlask, color:"grey",level:100}
   ]
 
   const projects = [
-    {
-      title: 'Whop Payment gateway',
-      description: 'A payment gateway that integrates whop payment can can be customised to accept certain currencies but currently accepts payment in dollars',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com/I-code-like-a-pro/whop_payment',
-      live: 'https://whop-payment-five.vercel.app',
-      
-    },
     {
       title: 'ArtistSphere',
       description: 'A modern music portfolio platform for artists to showcase their discography, share albums, and connect with fans.',
@@ -95,20 +94,6 @@ export default function Home() {
   live: 'https://temp-repo-storage-7avj.vercel.app/',
   
 },
-    {
-      title: "Barber & Cosmetology Licensing Education Industry",
-      desription:"The California barbering industry ",
-      tags:["HTML", "CSS", "JavaScript"],
-      github:"https://github.com/I-code-like-a-pro/Barber-course-",
-      live:"https://barber-course-navy.vercel.app"
-    },
-    {
-      title:"LUMIÈRE — Radically Radiant Skincare",
-      description:"LUMIÈRE is a premium skincare destination for those who refuse to compromise between nature and performance",
-      tags:["HTML","CSS","JavaScript"],
-      github:"https://github.com/I-code-like-a-pro/Skin-care-products",
-      live:"https://skin-care-products-two.vercel.app"
-    }
   ]
 
   return (
@@ -199,17 +184,17 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl sm:text-6xl font-bold text-dark mb-4"
-            >
-              Hi, I'm {'Emaediong Chrysanthus'}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Emaediong Chrysanthus
-              </span>
-            </motion.h1>
+         <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="text-3xl sm:text-5xl font-bold text-dark mb-4 text-center"
+>
+  Hi, I'm
+  <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-dark">
+    Emaediong Chrysanthus
+  </span>
+</motion.h1>
             
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -244,7 +229,7 @@ export default function Home() {
               </a>
               <a
                 href="#projects"
-                className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-300"
+                className="border-2 border-transparent hover:border-primary text-primary px-8 py-3 rounded-lg font-medium hover transition-colors duration-300"
               >
                 View Projects
               </a>
@@ -270,16 +255,17 @@ export default function Home() {
               </a>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.2 }}
-              className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-            >
-              <a href="#about" className="animate-bounce inline-block">
-                <FiArrowDown size={24} className="text-gray-400" />
-              </a>
-            </motion.div>
+          <motion.div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+  
+   
+  <a  href={isAtBottom ? '#home' : '#about'}
+    className="animate-bounce inline-block transition-transform duration-300">
+    {isAtBottom
+      ? <FiArrowUp size={24} className="text-gray-400" />
+      : <FiArrowDown size={24} className="text-gray-400" />
+    }
+  </a>
+</motion.div>
           </div>
         </div>
       </section>

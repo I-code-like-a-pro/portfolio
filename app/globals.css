@@ -8,6 +8,10 @@
   --color-light: #F9FAFB;
 }
 
+@theme{
+  --color-primary:#1F2937;
+}
+
 /* Custom base styles */
 @layer base {
   html {
@@ -140,6 +144,7 @@
   #home h1 span {
     display: block;
     margin-top: 0.5rem;
+    text-align: center;
   }
 
   #home h2 {

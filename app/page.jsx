@@ -68,15 +68,8 @@ export default function Home() {
       description: 'A payment gateway that integrates whop payment can can be customised to accept certain currencies but currently accepts payment in dollars',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       github: 'https://github.com/I-code-like-a-pro/whop_payment',
-      live: 'https:// whop-payment-five.vercel.app',
+      live: 'https://whop-payment-five.vercel.app',
       
-    },
-    {
-      title: 'Todo List',
-      description: 'Manage task to be done, and progress tracking.',
-      tags: ['Next.js', 'JSX', 'pocketbase.io'],
-      github: 'https://github.com/I-code-like-a-pro/todolist',
-      live: 'https://example.com',
     },
     {
       title: 'ArtistSphere',
@@ -91,7 +84,7 @@ export default function Home() {
   description: 'An intelligent conversational AI assistant capable of natural language processing, interactive games, and providing helpful information to users.',
   tags: ['JavaScript', 'React', 'CSS'],
   github: 'https://github.com/I-code-like-a-pro/chatbot',
-  live: 'https://chat-bot.vercel.app',
+  live: 'https://my-chatbot-wtg7.vercel.app/',
   
 },
 {
@@ -99,9 +92,23 @@ export default function Home() {
   description: 'A comprehensive event management platform that enables users to create, view, and delete events, manage attendee lists, and share events with others. Features include user authentication, password recovery, and intuitive event organization.',
   tags: ['Python', 'HTML', 'CSS', "Flask", "SQ lite"],
   github: 'https://github.com/I-code-like-a-pro/temp_repo_storage',
-  live: 'https://temp-repo-storage-x7g8.vercel.app/',
+  live: 'https://temp-repo-storage-7avj.vercel.app/',
   
-}
+},
+    {
+      title: "Barber & Cosmetology Licensing Education Industry",
+      desription:"The California barbering industry ",
+      tags:["HTML", "CSS", "JavaScript"],
+      github:"https://github.com/I-code-like-a-pro/Barber-course-",
+      live:"https://barber-course-navy.vercel.app"
+    },
+    {
+      title:"LUMIÈRE — Radically Radiant Skincare",
+      description:"LUMIÈRE is a premium skincare destination for those who refuse to compromise between nature and performance",
+      tags:["HTML","CSS","JavaScript"],
+      github:"https://github.com/I-code-like-a-pro/Skin-care-products",
+      live:"https://skin-care-products-two.vercel.app"
+    }
   ]
 
   return (
@@ -199,7 +206,7 @@ export default function Home() {
               className="text-4xl sm:text-6xl font-bold text-dark mb-4"
             >
               Hi, I'm {'Emaediong Chrysanthus'}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent items-center w-64">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Emaediong Chrysanthus
               </span>
             </motion.h1>

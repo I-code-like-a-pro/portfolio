@@ -199,7 +199,7 @@ export default function Home() {
               className="text-4xl sm:text-6xl font-bold text-dark mb-4"
             >
               Hi, I'm {'Emaediong Chrysanthus'}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent items-center w-64">
                 Emaediong Chrysanthus
               </span>
             </motion.h1>
